@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(100, 255, 218);
+  padding: 10px;
+  font-size: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 168, 129);
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 25;
+  color: rgb(100, 255, 218);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #111a28;
+}
+
+span {
+  color: rgb(100, 255, 218);
+}
+
+svg {
+  color: rgb(100, 255, 218);
+  width: 23px;
+}
+
+.content {
+  width: 900px;
+}
+
+.menu {
+  width: 900px;
+  position: absolute;
+  display: flex;
+  padding: 20px;
+  background-color: #111a28;
+  border-bottom: 1px solid rgb(100, 255, 218);
+  justify-content: space-between;
+}
+
+.icon {
+  width: 300px;
+}
+
+.iconHamburguer {
+  display: none;
+}
+
+.apresentation {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(100, 255, 218);
+}
