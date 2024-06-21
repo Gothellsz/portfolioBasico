@@ -85,10 +85,18 @@ svg {
   border-bottom: 1px solid rgb(100, 255, 218);
 }
 
-.about{
-  text-align: center;
+.social{
+  display: flex;
+  padding-top: 10px;
+  flex-direction: row;
 }
 
+.iconSocial{
+  margin-top: 20px;
+  display: flex;
+  width: 30px;
+  margin: 5px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -123,17 +131,18 @@ svg {
 
   .text{
     margin-top: 90%;
-    text-align: center;
   }
 
-  h1{
-    margin-bottom: 20px;
-  }
 
   .icon{
     position: absolute;
     padding-top: 80px;
     width: 200px;
+  }
+
+  .iconSocial{
+    margin-top: 5px;
+    width: 25px;
   }
 
   .apresentation {
