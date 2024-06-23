@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +19,12 @@ a {
 
 a:hover {
   color: rgb(0, 168, 129);
+}
+
+
+p{
+  text-align: justify;
+  padding-right: 20px;
 }
 
 h1 {
@@ -51,8 +62,27 @@ p{
   color: #fff;
 }
 
+
 span {
   color: rgb(100, 255, 218);
+  border-right: 4px solid #fff;
+  width: 10ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digitando 2s steps(10), piscando 0.5s infinite step-end alternate;
+}
+
+
+@keyframes digitando{
+  from{
+    width: 0%;
+  }
+}
+
+@keyframes piscando{
+  50%{
+    border-color: transparent;
+  }
 }
 
 svg {
@@ -62,6 +92,7 @@ svg {
 
 .content {
   width: 900px;
+  animation: fade-down 3s;
 }
 
 .menu {
@@ -75,7 +106,7 @@ svg {
 }
 
 .icon {
-  width: 300px;
+  width: 350px;
 }
 
 .iconHamburguer {
@@ -85,10 +116,29 @@ svg {
 .apresentation {
   display: flex;
   align-items: center;
-  height: 600px;
-  justify-content: space-between;
-  flex-direction: row;
+  width: 938px;
+  height: 500px;
+  padding-top: 50px;
   border-bottom: 1px solid rgb(100, 255, 218);
+}
+
+
+@keyframes fade-down{
+  0%{
+    opacity: 0;
+    transform: translate3D(-50%) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3D(0px) scale(1);
+  }
+}
+
+.text{
+  font-family: "Open Sans";
+  width: 550px;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .social{
@@ -106,8 +156,17 @@ svg {
 
 @media only screen and (max-width: 768px) {
 
+
   body{
     width: 100%;
+  }
+
+  p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-right: 0;
+    align-items: center;
   }
 
   h1{
@@ -135,14 +194,9 @@ svg {
     display: none;
   }
 
-  .text{
-    margin-top: 90%;
-  }
-
-
   .icon{
+    display: none;
     position: absolute;
-    padding-top: 80px;
     width: 200px;
   }
 
@@ -151,8 +205,15 @@ svg {
     width: 25px;
   }
 
-  .apresentation {
+  .content{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .apresentation {
+    flex-direction: row;
     height: auto; 
     border-bottom: none;
   }
