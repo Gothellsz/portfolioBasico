@@ -39,6 +39,12 @@ body {
   background-color: #111a28;
 }
 
+button{
+  border-style: none;
+  background: transparent;
+  width: 50px;
+}
+
 p{
   padding-top: 30px;
   font-size: 20px;
